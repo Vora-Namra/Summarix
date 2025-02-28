@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="sidepanel.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Summarix</h2>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="summarize">
+                <span class="material-icons">summarize</span>
+                Summarize
+            </button>
+            <button class="tab-btn" data-tab="notes">
+                <span class="material-icons">note</span>
+                Notes
+            </button>
+        </div>
+
+        <div id="summarizeSection" class="tab-content active">
+            <div class="actions">
+                <button id="summarizeBtn">
+                    <span class="material-icons">auto_awesome</span>
+                    Summarize Selection
+                </button>
+            </div>
+            <div id="results" class="results-container"></div>
+        </div>
+
+        <div id="notesSection" class="tab-content">
+            <div class="notes">
+                <textarea id="notes" placeholder="Take notes here..."></textarea>
+                <button id="saveNotesBtn">
+                    <span class="material-icons">save</span>
+                    Save Note
+                </button>
+            </div>
+            <div id="savedNotes" class="saved-notes"></div>
+        </div>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>
