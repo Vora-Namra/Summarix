@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Summarix",
     "version": "1.0",
-    "description": "AI-powered Research Assistant",
+    "description": "Summarix is a research assistant that helps you summarize and take notes from your research papers.",
     "permissions": [
         "activeTab",
         "storage",
