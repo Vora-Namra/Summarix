@@ -3,6 +3,7 @@ package com.research.assistant;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @RequestMapping("/api/research")
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 public class ResearchController {
 
+    @AutoWired
     private  ResearchService researchService;
 
     @PostMapping("/process")
